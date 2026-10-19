@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-Tech Cursos | Cursos de Tecnologia</title>
+  <meta name="description" content="A 3-Tech Cursos oferece cursos de tecnologia com professores experientes e aulas práticas.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__content">
+      <a href="#inicio" class="logo">3-Tech <span>Cursos</span></a>
+      <nav class="nav">
+        <a href="#cursos">Cursos</a>
+        <a href="#professores">Professores</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1>Aprenda tecnologia do jeito certo</h1>
+        <p>Cursos práticos, professores do mercado e projetos reais para impulsionar sua carreira.</p>
+        <a href="#cursos" class="btn">Ver cursos</a>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: CURSOS (Membro 1) -->
+    <section id="cursos" class="section">
+      <div class="container">
+        <h2>Cursos</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Lógica de Programação</h3>
+            <p>Base para quem está começando: algoritmos, variáveis e estruturas de controle.</p>
+            <span class="tag">40h • Iniciante</span>
+          </article>
+          <article class="card">
+            <h3>Desenvolvimento Web</h3>
+            <p>HTML, CSS e JavaScript para criar sites modernos e responsivos.</p>
+            <span class="tag">60h • Iniciante</span>
+          </article>
+          <article class="card">
+            <h3>Git e GitHub</h3>
+            <p>Versionamento, branches, pull requests e trabalho em equipe.</p>
+            <span class="tag">20h • Iniciante</span>
+          </article>
+          <article class="card">
+            <h3>Banco de Dados</h3>
+            <p>Modelagem, SQL e boas práticas para armazenar e consultar dados.</p>
+            <span class="tag">50h • Intermediário</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: PROFESSORES (Membro 2) -->
+    <section id="professores" class="section section--alt">
+      <div class="container">
+        <h2>Professores</h2>
+        <div class="grid">
+          <article class="card teacher">
+            <div class="avatar">AS</div>
+            <h3>Ana Souza</h3>
+            <p>Desenvolvedora front-end com 8 anos de experiência.</p>
+          </article>
+          <article class="card teacher">
+            <div class="avatar">CL</div>
+            <h3>Carlos Lima</h3>
+            <p>Engenheiro de software, especialista em back-end e bancos de dados.</p>
+          </article>
+          <article class="card teacher">
+            <div class="avatar">MP</div>
+            <h3>Mariana Pires</h3>
+            <p>DevOps e instrutora de Git, CI/CD e computação em nuvem.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: DIFERENCIAIS (Membro 3) -->
+    <section id="diferenciais" class="section">
+      <div class="container">
+        <h2>Diferenciais</h2>
+        <ul class="features">
+          <li><strong>Aulas práticas</strong> Projetos reais em todos os módulos.</li>
+          <li><strong>Professores do mercado</strong> Quem ensina também trabalha na área.</li>
+          <li><strong>Turmas pequenas</strong> Atenção individual e suporte constante.</li>
+          <li><strong>Certificado</strong> Comprove o que você aprendeu.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: CONTATO (Membro 3) -->
+    <section id="contato" class="section section--alt">
+      <div class="container">
+        <h2>Formulário de contato</h2>
+        <form id="form-contato" class="form" novalidate>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="curso">Curso de interesse</label>
+          <select id="curso" name="curso">
+            <option>Lógica de Programação</option>
+            <option>Desenvolvimento Web</option>
+            <option>Git e GitHub</option>
+            <option>Banco de Dados</option>
+          </select>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Enviar</button>
+          <p id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 3-Tech Cursos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
